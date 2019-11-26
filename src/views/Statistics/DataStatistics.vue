@@ -17,15 +17,19 @@
       </div>
     </section>
     <section v-loading="infoLoading" class="info">
-      <p>当前所有用户余额：{{info.totalbalance}}</p>
-      <p class="des">用户余额包含锁定余额</p>
-      <p>当前所有用户锁定余额：{{info.totalfrozen}}</p>
+      <p>当前所有用户余额：{{info.totalbalance}}</p><p class="des">用户余额包含锁定余额</p>
+      
+      <p>当前所有用户累计投入基础算力:{{info.totalCal}}</p>
       <p>累计充值：{{info.totalrechargeamount}}</p>
       <p class="des">用户余额包含锁定余额</p>
+      <!-- <p>当前所有用户锁定余额：{{info.totalfrozen}}</p> -->
       <p>累计提出：{{info.totalwithdrawamount}}</p>
       <p class="des">昨日累计提出不包含手续费</p>
       <p>昨日累计提出不包含手续费</p>
       <p>累计获得手续费：{{info.totalpoundageamount}}</p>
+      <p>当前所有用户累计获得增量收益:{{info.rateRecommendIncome}}</p>
+      <p>当前所有用户累计获得直推总奖励:{{info.validProfitRecommendIncome + info.invalidProfitRecommendIncome}}</p>
+      <p class="des">当前所有用户累计获得直推冻结奖励:{{info.invalidProfitRecommendIncome}}</p>
     </section>
   </section>
 </template>
