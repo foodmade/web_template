@@ -1,0 +1,691 @@
+export const area = 
+[{
+    "countryName": "阿尔巴尼亚",
+    "code": "+355"
+}, {
+    "countryName": "阿尔基里亚",
+    "code": "+213"
+}, {
+    "countryName": "阿富汗",
+    "code": "+93"
+}, {
+    "countryName": "阿根廷",
+    "code": "+54"
+}, {
+    "countryName": "爱尔兰",
+    "code": "+353"
+}, {
+    "countryName": "埃及",
+    "code": "+20"
+}, {
+    "countryName": "埃塞俄比亚",
+    "code": "+251"
+}, {
+    "countryName": "爱沙尼亚",
+    "code": "+372"
+}, {
+    "countryName": "阿拉伯联合酋长国",
+    "code": "+971"
+}, {
+    "countryName": "阿鲁巴",
+    "code": "+297"
+}, {
+    "countryName": "阿曼",
+    "code": "+968"
+}, {
+    "countryName": "安道尔",
+    "code": "+376"
+}, {
+    "countryName": "安哥拉",
+    "code": "+244"
+}, {
+    "countryName": "安圭拉",
+    "code": "+1264"
+}, {
+    "countryName": "安提瓜和巴布达",
+    "code": "+1268"
+}, {
+    "countryName": "澳大利亚",
+    "code": "+61"
+}, {
+    "countryName": "奥地利",
+    "code": "+43"
+}, {
+    "countryName": "阿塞拜疆",
+    "code": "+994"
+}, {
+    "countryName": "巴巴多斯",
+    "code": "+1246"
+}, {
+    "countryName": "巴布亚新几内亚",
+    "code": "+675"
+}, {
+    "countryName": "巴哈马",
+    "code": "+1242"
+}, {
+    "countryName": "白俄罗斯",
+    "code": "+375"
+}, {
+    "countryName": "百慕大",
+    "code": "+1441"
+}, {
+    "countryName": "巴基斯坦",
+    "code": "+92"
+}, {
+    "countryName": "巴拉圭",
+    "code": "+595"
+}, {
+    "countryName": "巴林",
+    "code": "+973"
+}, {
+    "countryName": "巴拿马",
+    "code": "+507"
+}, {
+    "countryName": "保加利亚",
+    "code": "+359"
+}, {
+    "countryName": "巴西",
+    "code": "+55"
+}, {
+    "countryName": "北马里亚纳群岛",
+    "code": "+1670"
+}, {
+    "countryName": "贝宁",
+    "code": "+229"
+}, {
+    "countryName": "比利时",
+    "code": "+32"
+}, {
+    "countryName": "冰岛",
+    "code": "+354"
+}, {
+    "countryName": "博茨瓦纳",
+    "code": "+267"
+}, {
+    "countryName": "波多黎各",
+    "code": "+1"
+}, {
+    "countryName": "波兰",
+    "code": "+48"
+}, {
+    "countryName": "玻利维亚",
+    "code": "+591"
+}, {
+    "countryName": "伯利兹",
+    "code": "+501"
+}, {
+    "countryName": "波斯尼亚和黑塞哥维那",
+    "code": "+387"
+}, {
+    "countryName": "不丹",
+    "code": "+975"
+}, {
+    "countryName": "布基纳法索",
+    "code": "+226"
+}, {
+    "countryName": "布隆迪",
+    "code": "+257"
+}, {
+    "countryName": "朝鲜",
+    "code": "+850"
+}, {
+    "countryName": "赤道几内亚",
+    "code": "+240"
+}, {
+    "countryName": "丹麦",
+    "code": "+45"
+}, {
+    "countryName": "德国",
+    "code": "+49"
+}, {
+    "countryName": "东帝汶",
+    "code": "+670"
+}, {
+    "countryName": "多哥",
+    "code": "+228"
+}, {
+    "countryName": "多米尼加共和国",
+    "code": "+1809"
+}, {
+    "countryName": "多米尼克",
+    "code": "+1767"
+}, {
+    "countryName": "厄瓜多尔",
+    "code": "+593"
+}, {
+    "countryName": "厄立特里亚",
+    "code": "+291"
+}, {
+    "countryName": "俄罗斯",
+    "code": "+7"
+}, {
+    "countryName": "法国",
+    "code": "+33"
+}, {
+    "countryName": "法罗群岛",
+    "code": "+298"
+}, {
+    "countryName": "梵蒂冈",
+    "code": "+379"
+}, {
+    "countryName": "法属波利尼西亚",
+    "code": "+689"
+}, {
+    "countryName": "法属圣马丁",
+    "code": "+1599"
+}, {
+    "countryName": "斐济",
+    "code": "+679"
+}, {
+    "countryName": "菲律宾",
+    "code": "+63"
+}, {
+    "countryName": "芬兰",
+    "code": "+358"
+}, {
+    "countryName": "佛得角",
+    "code": "+238"
+}, {
+    "countryName": "福克兰群岛",
+    "code": "+500"
+}, {
+    "countryName": "冈比亚",
+    "code": "+220"
+}, {
+    "countryName": "刚果（布）",
+    "code": "+242"
+}, {
+    "countryName": "刚果（金）",
+    "code": "+243"
+}, {
+    "countryName": "格陵兰",
+    "code": "+299"
+}, {
+    "countryName": "格林纳达",
+    "code": "+1473"
+}, {
+    "countryName": "格鲁吉亚",
+    "code": "+995"
+}, {
+    "countryName": "哥伦比亚",
+    "code": "+57"
+}, {
+    "countryName": "哥斯达黎加",
+    "code": "+506"
+}, {
+    "countryName": "关岛",
+    "code": "+1671"
+}, {
+    "countryName": "古巴",
+    "code": "+53"
+}, {
+    "countryName": "圭亚那",
+    "code": "+592"
+}, {
+    "countryName": "海地",
+    "code": "+509"
+}, {
+    "countryName": "韩国",
+    "code": "+82"
+}, {
+    "countryName": "哈萨克斯坦",
+    "code": "+7"
+}, {
+    "countryName": "黑山",
+    "code": "+382"
+}, {
+    "countryName": "荷兰",
+    "code": "+31"
+}, {
+    "countryName": "荷属安地列斯群岛",
+    "code": "+599"
+}, {
+    "countryName": "洪都拉斯",
+    "code": "+504"
+}, {
+    "countryName": "加纳",
+    "code": "+233"
+}, {
+    "countryName": "加拿大",
+    "code": "+1"
+}, {
+    "countryName": "柬埔寨",
+    "code": "+855"
+}, {
+    "countryName": "加蓬",
+    "code": "+241"
+}, {
+    "countryName": "吉布提",
+    "code": "+253"
+}, {
+    "countryName": "捷克共和国",
+    "code": "+420"
+}, {
+    "countryName": "吉尔吉斯斯坦",
+    "code": "+996"
+}, {
+    "countryName": "基里巴斯",
+    "code": "+686"
+}, {
+    "countryName": "津巴布韦",
+    "code": "+263"
+}, {
+    "countryName": "几内亚",
+    "code": "+224"
+}, {
+    "countryName": "几内亚比绍",
+    "code": "+245"
+}, {
+    "countryName": "开曼群岛",
+    "code": "+1345"
+}, {
+    "countryName": "喀麦隆",
+    "code": "+237"
+}, {
+    "countryName": "卡塔尔",
+    "code": "+974"
+}, {
+    "countryName": "科科斯（基林）群岛",
+    "code": "+61"
+}, {
+    "countryName": "克罗地亚",
+    "code": "+385"
+}, {
+    "countryName": "科摩罗",
+    "code": "+269"
+}, {
+    "countryName": "肯尼亚",
+    "code": "+254"
+}, {
+    "countryName": "科特迪瓦",
+    "code": "+225"
+}, {
+    "countryName": "科威特",
+    "code": "+965"
+}, {
+    "countryName": "库克群岛",
+    "code": "+682"
+}, {
+    "countryName": "来锁特",
+    "code": "+266"
+}, {
+    "countryName": "老挝",
+    "code": "+856"
+}, {
+    "countryName": "拉脱维亚",
+    "code": "+371"
+}, {
+    "countryName": "黎巴嫩",
+    "code": "+961"
+}, {
+    "countryName": "利比里亚",
+    "code": "+231"
+}, {
+    "countryName": "利比亚",
+    "code": "+218"
+}, {
+    "countryName": "列支敦士登",
+    "code": "+423"
+}, {
+    "countryName": "立陶宛",
+    "code": "+370"
+}, {
+    "countryName": "罗马尼亚",
+    "code": "+40"
+}, {
+    "countryName": "卢森堡",
+    "code": "+352"
+}, {
+    "countryName": "卢旺达",
+    "code": "+250"
+}, {
+    "countryName": "马达加斯加",
+    "code": "+261"
+}, {
+    "countryName": "马尔代夫",
+    "code": "+960"
+}, {
+    "countryName": "马耳他",
+    "code": "+356"
+}, {
+    "countryName": "马来西亚",
+    "code": "+60"
+}, {
+    "countryName": "马拉维",
+    "code": "+265"
+}, {
+    "countryName": "马里",
+    "code": "+223"
+}, {
+    "countryName": "曼岛",
+    "code": "+44"
+}, {
+    "countryName": "毛里求斯",
+    "code": "+230"
+}, {
+    "countryName": "毛里塔尼亚",
+    "code": "+222"
+}, {
+    "countryName": "马其顿",
+    "code": "+389"
+}, {
+    "countryName": "马绍尔群岛",
+    "code": "+692"
+}, {
+    "countryName": "马约特",
+    "code": "+262"
+}, {
+    "countryName": "美国",
+    "code": "+1"
+}, {
+    "countryName": "美属萨摩亚",
+    "code": "+1684"
+}, {
+    "countryName": "美属维京群岛",
+    "code": "+1340"
+}, {
+    "countryName": "蒙古",
+    "code": "+976"
+}, {
+    "countryName": "孟加拉国",
+    "code": "+880"
+}, {
+    "countryName": "蒙特塞拉特",
+    "code": "+1664"
+}, {
+    "countryName": "缅甸",
+    "code": "+95"
+}, {
+    "countryName": "密克罗尼西亚",
+    "code": "+691"
+}, {
+    "countryName": "秘鲁",
+    "code": "+51"
+}, {
+    "countryName": "摩尔多瓦",
+    "code": "+373"
+}, {
+    "countryName": "摩洛哥",
+    "code": "+212"
+}, {
+    "countryName": "摩纳哥",
+    "code": "+377"
+}, {
+    "countryName": "莫桑比克",
+    "code": "+258"
+}, {
+    "countryName": "墨西哥",
+    "code": "+52"
+}, {
+    "countryName": "纳米比亚",
+    "code": "+264"
+}, {
+    "countryName": "南非",
+    "code": "+27"
+}, {
+    "countryName": "南极洲",
+    "code": "+672"
+}, {
+    "countryName": "瑙鲁",
+    "code": "+674"
+}, {
+    "countryName": "尼泊尔",
+    "code": "+977"
+}, {
+    "countryName": "尼加拉瓜",
+    "code": "+505"
+}, {
+    "countryName": "尼日尔",
+    "code": "+227"
+}, {
+    "countryName": "尼日利亚",
+    "code": "+234"
+}, {
+    "countryName": "纽埃",
+    "code": "+683"
+}, {
+    "countryName": "挪威",
+    "code": "+47"
+}, {
+    "countryName": "帕劳",
+    "code": "+680"
+}, {
+    "countryName": "皮特凯恩群岛",
+    "code": "+870"
+}, {
+    "countryName": "葡萄牙",
+    "code": "+351"
+}, {
+    "countryName": "日本",
+    "code": "0081"
+}, {
+    "countryName": "瑞典",
+    "code": "+46"
+}, {
+    "countryName": "瑞士",
+    "code": "+41"
+}, {
+    "countryName": "萨尔瓦多",
+    "code": "+503"
+}, {
+    "countryName": "塞尔维亚",
+    "code": "+381"
+}, {
+    "countryName": "塞拉利昂",
+    "code": "+232"
+}, {
+    "countryName": "塞内加尔",
+    "code": "+221"
+}, {
+    "countryName": "塞浦路斯",
+    "code": "+357"
+}, {
+    "countryName": "塞舌尔",
+    "code": "+248"
+}, {
+    "countryName": "萨摩亚",
+    "code": "+685"
+}, {
+    "countryName": "沙特阿拉伯",
+    "code": "+966"
+}, {
+    "countryName": "圣巴泰勒米",
+    "code": "+590"
+}, {
+    "countryName": "圣诞岛",
+    "code": "+61"
+}, {
+    "countryName": "圣多美和普林西比",
+    "code": "+239"
+}, {
+    "countryName": "圣赫勒拿",
+    "code": "+290"
+}, {
+    "countryName": "圣基茨和尼维斯",
+    "code": "+1869"
+}, {
+    "countryName": "圣卢西亚",
+    "code": "+1758"
+}, {
+    "countryName": "圣马力诺",
+    "code": "+378"
+}, {
+    "countryName": "圣皮埃尔和密克隆群岛",
+    "code": "+508"
+}, {
+    "countryName": "圣文森特和格林纳丁斯",
+    "code": "+1784"
+}, {
+    "countryName": "斯里兰卡",
+    "code": "+94"
+}, {
+    "countryName": "斯洛伐克",
+    "code": "+421"
+}, {
+    "countryName": "斯洛文尼亚",
+    "code": "+386"
+}, {
+    "countryName": "斯威士兰",
+    "code": "+268"
+}, {
+    "countryName": "苏丹",
+    "code": "+249"
+}, {
+    "countryName": "苏里南",
+    "code": "+597"
+}, {
+    "countryName": "所罗门群岛",
+    "code": "+677"
+}, {
+    "countryName": "索马里",
+    "code": "+252"
+}, {
+    "countryName": "泰国",
+    "code": "+66"
+}, {
+    "countryName": "台湾",
+    "code": "+886"
+}, {
+    "countryName": "塔吉克斯坦",
+    "code": "+992"
+}, {
+    "countryName": "汤加",
+    "code": "+676"
+}, {
+    "countryName": "坦桑尼亚",
+    "code": "+255"
+}, {
+    "countryName": "特克斯和凯科斯群岛",
+    "code": "+1649"
+}, {
+    "countryName": "特立尼达和多巴哥",
+    "code": "+1868"
+}, {
+    "countryName": "土耳其",
+    "code": "+90"
+}, {
+    "countryName": "土库曼斯坦",
+    "code": "+993"
+}, {
+    "countryName": "突尼斯",
+    "code": "+216"
+}, {
+    "countryName": "托克劳",
+    "code": "+690"
+}, {
+    "countryName": "图瓦卢",
+    "code": "+688"
+}, {
+    "countryName": "瓦利斯和富图纳",
+    "code": "+681"
+}, {
+    "countryName": "瓦努阿图",
+    "code": "+678"
+}, {
+    "countryName": "危地马拉",
+    "code": "+502"
+}, {
+    "countryName": "委内瑞拉",
+    "code": "+58"
+}, {
+    "countryName": "文莱",
+    "code": "+673"
+}, {
+    "countryName": "乌干达",
+    "code": "+256"
+}, {
+    "countryName": "乌克兰",
+    "code": "+380"
+}, {
+    "countryName": "乌拉圭",
+    "code": "+598"
+}, {
+    "countryName": "乌兹别克斯坦",
+    "code": "+998"
+}, {
+    "countryName": "西班牙",
+    "code": "+34"
+}, {
+    "countryName": "希腊",
+    "code": "+30"
+}, {
+    "countryName": "新加坡",
+    "code": "+65"
+}, {
+    "countryName": "新喀里多尼亚",
+    "code": "+687"
+}, {
+    "countryName": "新西兰",
+    "code": "+64"
+}, {
+    "countryName": "匈牙利",
+    "code": "+36"
+}, {
+    "countryName": "叙利亚",
+    "code": "+963"
+}, {
+    "countryName": "牙买加",
+    "code": "+1876"
+}, {
+    "countryName": "亚美尼亚",
+    "code": "+374"
+}, {
+    "countryName": "也门",
+    "code": "+967"
+}, {
+    "countryName": "意大利",
+    "code": "+39"
+}, {
+    "countryName": "伊拉克",
+    "code": "+964"
+}, {
+    "countryName": "伊朗",
+    "code": "+98"
+}, {
+    "countryName": "印度",
+    "code": "+91"
+}, {
+    "countryName": "印度尼西亚",
+    "code": "+62"
+}, {
+    "countryName": "英国",
+    "code": "+44"
+}, {
+    "countryName": "英属维京群岛",
+    "code": "+1284"
+}, {
+    "countryName": "以色列",
+    "code": "+972"
+}, {
+    "countryName": "约旦",
+    "code": "+962"
+}, {
+    "countryName": "越南",
+    "code": "+84"
+}, {
+    "countryName": "赞比亚",
+    "code": "+260"
+}, {
+    "countryName": "乍得",
+    "code": "+235"
+}, {
+    "countryName": "直布罗陀",
+    "code": "+350"
+}, {
+    "countryName": "智利",
+    "code": "+56"
+}, {
+    "countryName": "中非共和国",
+    "code": "+236"
+}, {
+    "countryName": "中国",
+    "code": "+86"
+}, {
+    "countryName": "中国澳门特别行政区",
+    "code": "+853"
+}, {
+    "countryName": "中国香港特别行政区",
+    "code": "+852"
+}];
+
+
