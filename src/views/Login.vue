@@ -14,7 +14,7 @@
  */
 <template>
   <div class="login">
-    <h1>集结号后台管理系统</h1>
+    <h1>ECC后台管理系统</h1>
     <div class="container">
       <el-form :model="form" :rules="rules" ref="ruleForm"  class="ruleForm">
         <el-form-item  prop="username">
