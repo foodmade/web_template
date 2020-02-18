@@ -42,6 +42,9 @@
         <el-form-item label="交易hash">
           <el-input v-model="dto.transactionHash" size="medium" class="form-item" placeholder="请输入交易hash"></el-input>
         </el-form-item>
+        <el-form-item label="邮箱">
+        <el-input v-model="dto.email" size="medium" class="form-item" placeholder="请输入邮箱地址"></el-input>
+        </el-form-item>
         <el-form-item class="ml-50">
           <el-button @click="getList" type="primary" size="large">搜索</el-button>
           <el-button @click="reset" size="large">重置</el-button>
@@ -80,6 +83,10 @@
           <el-table-column
             prop="userPhone"
             label="交易人手机号">
+          </el-table-column>
+          <el-table-column
+            prop="email"
+            label="邮箱">
           </el-table-column>
           <el-table-column
             prop="walletAddress"
@@ -133,6 +140,7 @@ export default {
         transactionHash: '',
         currentPage: 1,
         pageSize: 50,
+        email:''
       },
       /**
        *     RECHARGE(10, "充币"),
@@ -163,6 +171,7 @@ export default {
         {label: '挖矿收益', val: '70'},
         {label: '直推奖励', val: '80'},
         {label: '冻结奖励', val: '90'},
+        {label: '内部划转', val: '100'},
       ],
       dateTime:[],
       data: [],
@@ -202,6 +211,8 @@ export default {
         transactionHash: '',
         currentPage: 1,
         pageSize: 50,
+        email:''
+
       }
       this.dateTime = [];
       this.getList();      

@@ -46,7 +46,7 @@ export default {
           ]
         },
         { tit: "系统管理", index: "4", child: [
-          { tit: "参数管理", index: "4-1", link: "/parameterManage"},
+          // { tit: "参数管理", index: "4-1", link: "/parameterManage"},
           { tit: "版本管理", index: "4-2", link: "/versionsManage"},
           { tit: "公告管理", index: "4-3", link: "/announcementManage"},
           { tit: "修改密码", index: "4-4", link: "/fixPassWord"},

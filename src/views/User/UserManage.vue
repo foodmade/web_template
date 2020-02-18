@@ -39,6 +39,9 @@
             <el-option v-for="(item,index) in levelOption" :key="index" :value="item" :lable="item"></el-option>
           </el-select>
         </el-form-item> -->
+        <el-form-item label="邮箱">
+          <el-input v-model="form.email" size="medium" class="form-item" placeholder="请输入邮箱"></el-input>
+        </el-form-item>
         <el-form-item class="ml-50">
           <el-button @click="getList" type="primary" size="large">搜索</el-button>
           <el-button @click="clearHandel" size="large">重置</el-button>
@@ -66,6 +69,11 @@
           <el-table-column
             prop="userName"
             label="用户名">
+          </el-table-column>
+          <el-table-column
+            prop="email"
+            label="邮箱"
+            width="180">
           </el-table-column>
           <!-- <el-table-column
             label="用户等级">
@@ -123,6 +131,7 @@ export default {
         startTime: '',
         endTime: '',
         userLevel: '',
+        email:'',
         time:[]
       },
       data: [],
@@ -146,6 +155,7 @@ export default {
         endTime: this.form.time[1],
         currentPage: this.page,
         pageSize:this.limit,
+        email:this.form.email
       }
       this.loading = true;
       this.axios.post(API.userList,list).then((res) => {

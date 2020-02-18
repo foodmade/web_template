@@ -10,7 +10,7 @@
   <van-loading v-if="loading" type="spinner" vertical>
     加载中...
   </van-loading>
-  <h1>吹响集结号，收益享不停</h1>
+  <h1>一键参与ECC轻量化挖矿</h1>
   <div class="container">
     <van-cell-group class="item" :border="false">
       <span class="area-code f-r-c" @click="selectArea($event)">
