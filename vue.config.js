@@ -87,7 +87,7 @@ module.exports = {
   pwa: {}, // configure webpack-dev-server behavior
   devServer: {
     open: process.platform === "darwin",
-    // disableHostCheck: true,
+    disableHostCheck: true,
     host: "0.0.0.0",
     port: 8080,
     https: false,

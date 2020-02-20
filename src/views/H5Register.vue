@@ -26,14 +26,14 @@
       </div>
       <template v-if="registerType === 'email'">
         <van-cell-group class="item" :border="false">
-          <van-field @blur="phoneValidate" :border="false" v-model="form.email" type="number" placeholder="请输入邮箱"/>
+          <van-field @blur="emailValidate" :border="false" v-model="form.email"  placeholder="请输入邮箱"/>
         </van-cell-group>
-        <p v-if="phoneValidateVisible" class="err-msg">{{errorText6}}</p>
+        <p v-if="emailValidateVisible" class="err-msg">{{errorText7}}</p>
         <van-cell-group class="item" :border="false">
           <van-field @blur="codeValidate" :border="false" v-model="form.code" type="number" placeholder="请输入邮箱验证码"/>
           <van-button @click="sendCode" :disabled="disabled" class="get-code">{{disabled?count:codeText}}</van-button>
         </van-cell-group>
-        <p v-if="codeValidateVisible" class="err-msg">{{errorText7}}</p>
+        <p v-if="codeValidateVisible" class="err-msg">{{errorText6}}</p>
       </template>
       <template v-else>
         <van-cell-group class="item" :border="false">
@@ -131,6 +131,7 @@
         pwdValidateVisible: false,
         pwd2ValidateVisible: false,
         inviteValidateVisible: false,
+        emailValidateVisible:false,
         errorText1: '',
         errorText2: '',
         errorText3: '',
@@ -169,6 +170,15 @@
           return true
         }
       },
+      emailValidate(){
+        const myreg = /^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z]{2,5}){1,2}$/;;
+        if(!myreg.test(this.form.email)){
+          this.emailValidateVisible = true;
+          this.errorText7 = '请输入正确的邮箱地址';
+        }else{
+          this.inviteValidateVisible = false;
+        }
+      },
       codeValidate () {
         if (!this.form.code) {
           this.codeValidateVisible = true;
@@ -205,15 +215,26 @@
         }
       },
       sendCode () {
-        if (!this.phoneValidate()) {
+        if (!this.phoneValidate() && !this.emailValidate() && 1===2) {
+          console.log(`异常的手机号码`);
           return
         } else {
           const list = {
-            userPhone: this.form.userPhone,
+            userPhone: '',
             valiDation: 1,
             mobileArea: this.form.mobileArea,
+            email:''
+          };
+          let apiUrl;
+          if(this.judgeRegisterType()){
+            apiUrl = API.sendEmailCode;
+            list.email = this.form.email;
+          }else{
+            apiUrl = API.sendSmsCode;
+            list.userPhone = this.form.userPhone;
           }
-          this.axios.post(API.sendSmsCode, list).then((res) => {
+
+          this.axios.post(apiUrl, list).then((res) => {
             try {
               if (res.code === '10000') {
                 const TIME_COUNT = 60;
@@ -242,13 +263,22 @@
 
         }
       },
+
+      judgeRegisterType(){
+        return this.registerType === 'email';
+      },
+
       submitForm () {
-        this.phoneValidate();
+        if(this.judgeRegisterType()){
+          this.emailValidate();
+        }else{
+          this.phoneValidate();
+        }
         this.codeValidate();
         this.pwdValidate();
         this.pwd2Validate();
         this.inviteCodeValidate();
-        const arr = [this.phoneValidateVisible, this.codeValidateVisible, this.pwdValidateVisible, this.pwd2ValidateVisible, this.inviteValidateVisible];
+        const arr = [this.codeValidateVisible, this.pwdValidateVisible, this.pwd2ValidateVisible, this.inviteValidateVisible];
         const isPass = arr.every(item => item === false);
         if (!isPass) {
           return

@@ -46,6 +46,8 @@ export const API = {
   // h5 短信验证
   sendSmsCode: "/common/sendSmsCode", // 短信验证
 
+  sendEmailCode: "/common/sendEmailCode", //邮箱注册
+
   // h5 注册
   h5Register: "/user/register" // h5注册
 };
