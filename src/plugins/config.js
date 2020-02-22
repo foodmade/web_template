@@ -7,10 +7,10 @@
  */
 export const baseUrl = () => {
   if (process.env.NODE_ENV === 'production') {   // 生产
-    return 'http://39.98.165.155:9008';
+    return 'http://18.139.226.25:8189';
   } else {
     /** 测试数据库 */
-    return 'http://39.98.165.155:9008';
+    return 'http://127.0.0.1:9005';
   }
 };
 export const downUrl = "https://cassembly.s3.ap-east-1.amazonaws.com/";
